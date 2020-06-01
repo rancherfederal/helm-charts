@@ -3,7 +3,7 @@ entries:
   keycloak:
   - apiVersion: v1
     appVersion: 9.0.2
-    created: "2020-06-01T09:08:30.280084-04:00"
+    created: "2020-06-01T09:11:20.694932-04:00"
     dependencies:
     - condition: keycloak.persistence.deployPostgres
       name: postgresql
@@ -31,6 +31,6 @@ entries:
     - https://github.com/codecentric/helm-charts
     - https://github.com/jboss-dockerfiles/keycloak
     urls:
-    - https://github.com/rancherfederal/helm-charts/keycloak-7.7.0.tgz
+    - https://rancherfederal.github.io/helm-charts/keycloak-7.7.0.tgz
     version: 7.7.0
-generated: "2020-06-01T09:08:30.272845-04:00"
+generated: "2020-06-01T09:11:20.689344-04:00"
