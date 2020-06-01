@@ -1,0 +1,13 @@
+{{- if .Values.keycloak.pki.enabled -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "keycloak.fullname" . }}-stores
+  labels:
+    {{- include "keycloak.commonLabels" . | nindent 4 }}
+binaryData:
+  keystore.jks: |-
+    {{ .Files.Get "files/keystore.jks" | b64enc }}
+  truststore.jks: |-
+    {{ .Files.Get "files/truststore.jks" | b64enc }}
+{{- end -}}
